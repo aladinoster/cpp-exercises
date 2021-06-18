@@ -11,5 +11,10 @@ int main()
     int *ptr2 = &var;              // same as before
     double *ptr3 = (double *)&var; // casting int as double
 
+    *ptr2 = 10; // this a way to access data in the pointer
+    LOG(var);
+    *ptr3 = 12;
+    LOG(var);
+
     std::cin.get();
 }
