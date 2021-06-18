@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 
 #define LOG(x) std::cout << x << std::endl
 
@@ -13,8 +14,16 @@ int main()
 
     *ptr2 = 10; // this a way to access data in the pointer
     LOG(var);
-    *ptr3 = 12;
+    *ptr3 = 10; // this does not work because of type inference?
     LOG(var);
 
+    // heap memory
+    char *buffer = new char[8]; // Allocate 8 bites
+    memset(buffer, 0, 8);
+
+    // Pointer to pointer
+    char **ptr4 = &buffer;
+
+    delete[] buffer; // Cleaning allocate dmemory
     std::cin.get();
 }
