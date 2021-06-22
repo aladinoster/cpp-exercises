@@ -14,6 +14,11 @@ struct Entity
     }
 };
 
+static void Printing(Entity e)
+{
+    std::cout << e.X << " , " << e.Y << std::endl; // how a class method looks like. You need the instance.
+}
+
 int Entity::X; // Single instance of this variable across all instances of the struct variables
 int Entity::Y; // Like if all instances of Entity point towards the same memory address X,Y
 
