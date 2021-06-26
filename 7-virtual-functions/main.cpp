@@ -5,6 +5,7 @@ class Entity
 {
 public:
     virtual std::string GetName() { return "Entity"; } // virtual tells the compiler point to the correct method
+                                                       // Add overhead to the call.
 };
 
 class Player : public Entity
