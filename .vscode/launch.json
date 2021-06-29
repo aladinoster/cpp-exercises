@@ -15,6 +15,13 @@
             "environment": [],
             "externalConsole": true,
             "MIMode": "lldb",
+            "setupCommands": [
+                {
+                    "text": "-enable-pretty-printing",
+                    "description": "enable pretty printing",
+                    "ignoreFailures": true
+                }
+            ],
             "preLaunchTask": "C/C++: g++-10 build active file"
         }
     ]
