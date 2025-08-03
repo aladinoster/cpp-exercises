@@ -3,7 +3,7 @@
         {
             "type": "cppbuild",
             "label": "C/C++: g++-10 build active file",
-            "command": "/usr/local/bin/g++-10",
+            "command": "/usr/bin/g++",
             "args": [
                 "-g",
                 "${file}",
@@ -25,7 +25,7 @@
         {
             "type": "cppbuild",
             "label": "C/C++: g++-10 build folder cxx files",
-            "command": "/usr/local/bin/g++-10",
+            "command": "/usr/bin/g++",
             "args": [
                 "-g",
                 "${fileDirname}/**.cpp",
